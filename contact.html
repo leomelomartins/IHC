@@ -23,7 +23,7 @@ https://templatemo.com/tm-534-parallo
         <div class="row tm-brand-row">
           <div class="col-lg-4 col-11">
             <div class="tm-brand-container tm-bg-white-transparent">
-              <i class="fas fa-2x fa-pen tm-brand-icon"></i>
+                <img src="img/sword-shield-512.png">
               <div class="tm-brand-texts">
                 <h1 class="text-uppercase tm-brand-name">Rate Ludus</h1>
                 <p class="small">portal de jogos</p>
@@ -33,9 +33,14 @@ https://templatemo.com/tm-534-parallo
           <div class="col-lg-8 col-1">
             <div class="tm-nav">
               <nav class="navbar navbar-expand-lg navbar-light tm-bg-white-transparent tm-navbar">
-                <button class="navbar-toggler" type="button"
-                  data-toggle="collapse" data-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -56,14 +61,11 @@ https://templatemo.com/tm-534-parallo
                       <div class="tm-nav-link-highlight"></div>
                       <a class="nav-link" href="#">Cadastro <span class="sr-only">(current)</span></a>
                     </li>
-                    <div class="topnav"></div>
-                    <li class="nav-item">
-                        <input type="text" placeholder="Buscar Jogo">
-                      </div>
                   </ul>
                 </div>
               </nav>
             </div>
+          </div>
         </div>
 
         <!-- Testimonials header -->
@@ -88,16 +90,32 @@ https://templatemo.com/tm-534-parallo
             <div class="col-lg-6 tm-contact-col-left">
                 <form action="#" method="POST" id="tmContactForm" class="tm-bg-black-transparent tm-contact-form">
                   <div class="form-group">
+                    <label>Primeiro nome</label>
                     <input type="text" id="contact_name" name="contact_name" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Primeiro Nome" required="">
                   </div>
                   <div class="form-group">
+                      <label>Sobrenome</label>
                     <input type="text" id="sobrenome" name="sobrenome" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Sobrenome" required="">
                   </div>
                   <div class="form-group">
+                      <label>Email</label>
                     <input type="email" id="contact_email" name="contact_email" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Email" required="">
                   </div>
                   <div class="form-group">
-                    <input type="text" id="senha" name="senha" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Senha" required=""></input>
+                      <label>Senha</label>
+                    <input type="password" id="senha" name="senha" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Senha" required=""></input>
+                    <input type="checkbox" onclick="myFunction()">Mostrar Senha
+                    <script>
+                        function myFunction() {
+                          var x = document.getElementById("senha");
+                          if (x.type == "password") {
+                            x.type = "text";
+                          } else {
+                            x.type = "password";
+                          }
+                        }
+                        </script>
+
                   </div>
                   <div class="text-right">
                     <button type="cadastrar" class="btn btn-primary tm-btn-submit rounded-0">
