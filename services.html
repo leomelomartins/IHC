@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="css/personalized.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 <!--
 Parallo Template
@@ -111,82 +114,36 @@ https://templatemo.com/tm-534-parallo
           <div class="col-12 tm-tabs-container">
               <div class="tm-tab-links">
                     <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                        <li><a href="#tab1" class="">
+                        <li><a class="">
                             <div class="icon-wrap"><i class="fas fa-2x fa-star"></i></div>
                             NOTA
-                            <style>
-                                .wrapper {
-                                    padding: 20px;
-
-                                    border-radius: 5px;
-
-                                }
-                                .rating{
-                                    overflow: hidden;
-                                    vertical-align: bottom;
-                                    display: inline-block;
-                                    width: auto;
-                                    height: 30px;
-                                    margin-right: 50px;
-                                }
-                                .rating > input{
-                                    opacity: 0;
-                                    margin-right: -100%;
-                                }
-                                .rating > label{
-                                    position: relative;
-                                    display: block;
-                                    float: right;
-                                    background: url('star-off-big.png');
-                                    background-size: 30px 30px;
-                                }
-                                .rating > label:before{
-                                    display: block;
-                                    opacity: 0;
-                                    content: '';
-                                    width: 30px;
-                                    height: 30px;
-                                    background: url('star-on-big.png');
-                                    background-size: 30px 30px;
-                                    transition: opacity 0.2s linear;
-                                }
-                                .rating > label:hover:before,
-                                .rating > label:hover ~ label:before,
-                                .rating:not(:hover) > :checked ~ label:before{
-                                    opacity: 1;
-                                }
-
-                            </style>
+                            <body>
+                              <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                              </div>
+                            </body>
 
 
-                        </head>
-                        <body>
-                            <div class="wrapper">
-                                <span class="rating">
-                                    <input id="rating5" type="radio" name="rating" value="5">
-                                    <label for="rating5">5</label>
-                                    <input id="rating4" type="radio" name="rating" value="4">
-                                    <label for="rating4">4</label>
-                                    <input id="rating3" type="radio" name="rating" value="3">
-                                    <label for="rating3">3</label>
-                                    <input id="rating2" type="radio" name="rating" value="2" checked>
-                                    <label for="rating2">2</label>
-                                    <input id="rating1" type="radio" name="rating" value="1">
-                                    <label for="rating1">1</label>
-                                </span>
-                            </div>
 
-                        </body>
 
 
                         </a></li>
-                        <li><a href="#tab2" class="">
+                        <li><a class="">
                             <div class="icon-wrap"><i class="fas fa-2x fa-heart"></i></div>
                             FAVORITO
                         </a></li>
                         <li><a href="#tab3" class="">
                             <div class="icon-wrap"><i class="fas fa-2x fa-users"></i></div>
-                            ADICIONE UMA REVIEW
+                            REVIEW DE OUTROS JOGADORES
                         </a></li>
                     </ul>
                 </div>
@@ -195,18 +152,39 @@ https://templatemo.com/tm-534-parallo
 
                         <div id="tab3">
                             <div class="text-content">
-                                <h3 class="tm-service-tab-title">Review</h3>
+                                <h3 class="tm-service-tab-title">Escreva sua Review</h3>
                                 <form action="#" method="POST" id="tmContactForm">
                                   <div class="form-group">
                                     <textarea rows="4" cols="50" type="text" id="contact_name" name="contact_name" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Digite aqui sua Review" required=""></textarea>
                                   </div>
+                                  <button type="submit" class="btn btn-secondary">Enviar</button>
                             </div>
                         </div>
 
                     </div>
                 </div>
 
-            </div>
+
+                <div class="col-12">
+                  <div class="tm-bg-black-transparent tm-services-detail-box">
+                      <p>
+                        League of Legends é um jogo eletrônico do gênero multiplayer online battle arena, desenvolvido e publicado pela Riot Games para Microsoft Windows e Mac OS X. É um jogo gratuito para jogar e inspirado no modo Defense of the Ancients de Warcraft III: The Frozen Throne
+                      </p>
+                      <div class="rating">
+                        <!-- Thumbs up -->
+                        <div class="like grow">
+                          <i class="fa fa-thumbs-up fa-3x like" aria-hidden="true"></i>
+                        </div>
+                        <!-- Thumbs down -->
+                        <div class="dislike grow">
+                          <i class="fa fa-thumbs-down fa-3x like" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                  </div>
+
+              </div>
+
+
         </section>
 
         <!-- Page footer -->
@@ -222,6 +200,9 @@ https://templatemo.com/tm-534-parallo
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/7ad89d9866.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <script>
         $(function(){
             $('.tabgroup > div').hide();
@@ -244,6 +225,14 @@ https://templatemo.com/tm-534-parallo
               }
             })
         });
+
+    </script>
+    <script>
+    $('.like, .dislike').on('click', function() {
+        event.preventDefault();
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+    });
 
     </script>
   </body>
