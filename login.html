@@ -71,7 +71,7 @@ https://templatemo.com/tm-534-parallo
 
         <section class="row tm-contact-row">
             <div class="col-lg-6 tm-contact-col-left">
-                <form action="#" method="POST" id="tmContactForm" class="tm-bg-black-transparent tm-contact-form">
+                <form action="/index_logado.html" id="tmContactForm" class="tm-bg-black-transparent tm-contact-form">
                   <div class="form-group">
                       <label>Email</label>
                     <input type="email" id="contact_email" name="contact_email" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Email" required="">
@@ -88,6 +88,12 @@ https://templatemo.com/tm-534-parallo
                           } else {
                             x.type = "password";
                           }
+                        }
+                        
+                        function handleSubmit(){
+                            //e.preventDefault();
+                            console.log("teste");
+                            window.location.href="http://localhost:49959/index.html";
                         }
                         </script>
                     
